@@ -1194,13 +1194,33 @@ body {
 
 /* ── 2. OPEN INVITATION BUTTON ───────────────────── */
 document.getElementById('openBtn').addEventListener('click', function () {
-  const invitation = document.getElementById('invitation');
-  invitation.classList.add('visible');
-  setTimeout(() => {
-    invitation.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100);
-});
 
+  const invitation = document.getElementById('invitation');
+
+  // PLAY MUSIC
+  const audio = document.getElementById('bgMusic');
+  const icon  = document.getElementById('musicIcon');
+  const btn   = document.getElementById('musicBtn');
+
+  audio.muted = false;
+  audio.volume = 0.25;
+
+  audio.play().then(() => {
+    icon.className = 'fas fa-pause';
+    btn.style.border = '1px solid #c9a84c';
+  }).catch(() => {});
+
+  // SHOW INVITATION
+  invitation.classList.add('visible');
+
+  setTimeout(() => {
+    invitation.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }, 100);
+
+});
 /* ── 3. COUNTDOWN TIMER ──────────────────────────── */
 (function initCountdown() {
   const target = new Date('2026-07-10T19:00:00');
