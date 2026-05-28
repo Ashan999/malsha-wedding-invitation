@@ -1307,19 +1307,40 @@ document.getElementById('openBtn').addEventListener('click', function () {
   const btn   = document.getElementById('musicBtn');
   const audio = document.getElementById('bgMusic');
   const icon  = document.getElementById('musicIcon');
-  let playing = false;
 
-  // volume
+  let playing = true;
+
   audio.volume = 0.25;
+  audio.muted = true;
+
+  window.addEventListener('load', () => {
+    audio.play().then(() => {
+
+      setTimeout(() => {
+        audio.muted = false;
+      }, 1200);
+
+      icon.className = 'fas fa-pause';
+      btn.style.border = '1px solid #c9a84c';
+
+    }).catch(() => {
+      console.log('Autoplay blocked');
+    });
+  });
 
   btn.addEventListener('click', () => {
-    if (playing) {
+
+    if (!audio.paused) {
       audio.pause();
       icon.className = 'fas fa-music';
       btn.style.border = '';
       playing = false;
+
     } else {
-      audio.play().catch(() => {}); // may be blocked by browser
+
+      audio.play();
+      audio.muted = false;
+
       icon.className = 'fas fa-pause';
       btn.style.border = '1px solid #c9a84c';
       playing = true;
