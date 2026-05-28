@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Sasidu & Malsha Wedding Invitation" />
+  <meta property="og:description" content="අපගේ ජීවිතයේ සුන්දරම මොහොත ඔබ සමඟ සැමරීමට ආදරයෙන් ආරාධනා කරමු." />
+  <title>Sasidu & Malsha | Wedding Invitation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Great+Vibes&family=Noto+Serif+Sinhala:wght@200;300;400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  
+<style>
+/* ═══════════════════════════════════════════════════
+   VARIABLES & RESET
+═══════════════════════════════════════════════════ */
+:root {
+  --navy:      #050d1a;
+  --navy-mid:  #0b1829;
+  --navy-soft: #0f2040;
+  --gold:      #c9a84c;
+  --gold-lt:   #e4c97e;
+  --gold-dk:   #a07830;
+  --white:     #f5f0e8;
+  --white-soft:#ccc7bc;
+  --glass-bg:  rgba(255,255,255,0.04);
+  --glass-bd:  rgba(201,168,76,0.25);
+  --glow:      rgba(201,168,76,0.18);
+
+  --font-display: 'Great Vibes', cursive;
+  --font-serif:   'Cormorant Garamond', Georgia, serif;
+  --font-sinhala: 'Noto Serif Sinhala', serif;
+  --font-title:   'Cinzel', serif;
+
+  --ease-silk: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-serif);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold-dk); border-radius: 4px; }
+
+/* ═══════════════════════════════════════════════════
+   MUSIC BUTTON
+═══════════════════════════════════════════════════ */
+.music-btn {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-bd);
+  background: rgba(5,13,26,0.75);
+  backdrop-filter: blur(10px);
+  color: var(--gold);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s var(--ease-silk);
+  box-shadow: 0 0 20px var(--glow);
+}
+.music-btn:hover { background: var(--gold); color: var(--navy); transform: scale(1.1); }
+
+/* ═══════════════════════════════════════════════════
+   COVER SECTION
+═══════════════════════════════════════════════════ */
+.cover {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%,   rgba(201,168,76,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 80%,   rgba(201,168,76,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 100% at 50% 50%, #050d1a 0%, #020810 100%);
+}
+
+/* starfield noise */
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.25) 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 15%, rgba(255,255,255,0.2)  0%, transparent 100%),
+    radial-gradient(1px 1px at 45% 65%, rgba(255,255,255,0.15) 0%, transparent 100%),
+    radial-gradient(1px 1px at 10% 80%, rgba(255,255,255,0.18) 0%, transparent 100%),
+    radial-gradient(1px 1px at 85% 50%, rgba(255,255,255,0.12) 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 90%, rgba(255,255,255,0.20) 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 10%, rgba(255,255,255,0.22) 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 75%, rgba(255,255,255,0.14) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+#fireflies {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* elegant golden top arc */
+.cover::after {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.12);
+  pointer-events: none;
+}
+
+.cover-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  animation: fadeUp 1.4s var(--ease-silk) both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cover-eyebrow {
+  font-family: var(--font-title);
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 1.8rem;
+  animation: fadeUp 1.4s 0.2s var(--ease-silk) both;
+}
+
+/* names */
+.names-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  animation: fadeUp 1.4s 0.35s var(--ease-silk) both;
+}
+
+.name-groom,
+.name-bride {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+  background: linear-gradient(160deg, var(--gold-lt) 0%, var(--gold) 50%, var(--gold-dk) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.name-groom { font-size: clamp(2.6rem, 9vw, 4rem); }
+.name-bride { font-size: clamp(2.6rem, 9vw, 4rem); }
+
+.ampersand {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 6vw, 2.6rem);
+  color: var(--gold);
+  opacity: 0.7;
+  margin: -0.2rem 0;
+}
+
+.cover-date {
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--white-soft);
+  margin-top: 1.4rem;
+  animation: fadeUp 1.4s 0.5s var(--ease-silk) both;
+}
+
+.cover-quote {
+  font-family: var(--font-sinhala);
+  font-size: 0.85rem;
+  color: var(--gold);
+  opacity: 0.75;
+  font-style: italic;
+  margin-top: 1.2rem;
+  letter-spacing: 0.04em;
+  animation: fadeUp 1.4s 0.6s var(--ease-silk) both;
+}
+
+.cover-welcome {
+  font-family: var(--font-sinhala);
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--white-soft);
+  margin-top: 1.6rem;
+  animation: fadeUp 1.4s 0.75s var(--ease-silk) both;
+}
+
+/* open button */
+.btn-open {
+  margin-top: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: var(--font-sinhala);
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.4s var(--ease-silk);
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 1.4s 0.95s var(--ease-silk) both;
+}
+
+.btn-open::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-silk);
+  border-radius: inherit;
+}
+
+.btn-open:hover { color: var(--navy); box-shadow: 0 0 30px rgba(201,168,76,0.4); }
+.btn-open:hover::before { transform: scaleX(1); }
+.btn-open span, .btn-open i { position: relative; z-index: 1; }
+.btn-open i { font-size: 0.75rem; animation: bounce 2s ease-in-out infinite; }
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(4px); }
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--gold);
+  opacity: 0.4;
+  font-size: 1.1rem;
+  animation: pulse-hint 2.5s ease-in-out infinite, fadeUp 1.4s 1.2s var(--ease-silk) both;
+}
+
+@keyframes pulse-hint {
+  0%,100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+  50%      { opacity: 0.8; transform: translateX(-50%) translateY(6px); }
+}
+
+/* ═══════════════════════════════════════════════════
+   INVITATION WRAPPER
+═══════════════════════════════════════════════════ */
+.invitation {
+  background:
+    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(201,168,76,0.05) 0%, transparent 60%),
+    var(--navy-mid);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invitation.visible { display: flex; }
+
+/* ═══════════════════════════════════════════════════
+   ORNAMENT DIVIDER
+═══════════════════════════════════════════════════ */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 440px;
+  padding: 0 1.5rem;
+  margin: 0.5rem 0;
+  gap: 1rem;
+}
+
+.ornament-divider .line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dk), transparent);
+}
+
+.ornament-star {
+  color: var(--gold);
+  font-size: 0.5rem;
+  opacity: 0.7;
+}
+
+/* ═══════════════════════════════════════════════════
+   SECTIONS
+═══════════════════════════════════════════════════ */
+.section {
+  width: 100%;
+  max-width: 460px;
+  padding: 2.5rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.section-title {
+  font-family: var(--font-sinhala);
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--gold-lt);
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0.5rem auto 0;
+  opacity: 0.6;
+}
+
+/* ═══════════════════════════════════════════════════
+   GLASS CARD
+═══════════════════════════════════════════════════ */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-bd);
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 4px 24px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(201,168,76,0.1);
+  transition: transform 0.4s var(--ease-silk), box-shadow 0.4s var(--ease-silk);
+}
+
+.glass-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 40px rgba(0,0,0,0.45),
+    0 0 30px var(--glow),
+    inset 0 1px 0 rgba(201,168,76,0.15);
+}
+
+/* ═══════════════════════════════════════════════════
+   COUNTDOWN
+═══════════════════════════════════════════════════ */
+.countdown-section { padding-top: 3rem; }
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.count-box {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-bd);
+  border-radius: 12px;
+  padding: 1rem 0.4rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.count-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.count-box span {
+  display: block;
+  font-family: var(--font-title);
+  font-size: clamp(1.6rem, 7vw, 2.4rem);
+  font-weight: 300;
+  background: linear-gradient(180deg, var(--gold-lt) 0%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  transition: transform 0.3s var(--ease-silk);
+}
+
+.count-box label {
+  display: block;
+  font-family: var(--font-sinhala);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--white-soft);
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════════════
+   DETAIL CARDS
+═══════════════════════════════════════════════════ */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.detail-card {
+  padding: 1.4rem 0.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-bd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  background: rgba(201,168,76,0.07);
+}
+
+.detail-card h3 {
+  font-family: var(--font-sinhala);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--gold-lt);
+  letter-spacing: 0.06em;
+}
+
+.detail-card p {
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.detail-card .sub {
+  font-size: 0.72rem;
+  color: var(--white-soft);
+}
+
+/* ═══════════════════════════════════════════════════
+   VENUE CARD
+═══════════════════════════════════════════════════ */
+.venue-card {
+  width: 100%;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.venue-name {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--gold-lt);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.venue-address {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--white-soft);
+  letter-spacing: 0.06em;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--glass-bd);
+}
+
+.map-container iframe { display: block; filter: brightness(0.85) saturate(0.7) hue-rotate(190deg); }
+
+.btn-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.5rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  font-family: var(--font-sinhala);
+  font-size: 0.8rem;
+  border-radius: 50px;
+  transition: all 0.35s var(--ease-silk);
+  margin-top: 0.4rem;
+}
+
+.btn-directions:hover {
+  background: var(--gold);
+  color: var(--navy);
+  box-shadow: 0 0 20px var(--glow);
+}
+
+/* ═══════════════════════════════════════════════════
+   GALLERY
+═══════════════════════════════════════════════════ */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.gallery-item {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 1px solid var(--glass-bd);
+  background: var(--glass-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--gold);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.4s var(--ease-silk);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+
+.gallery-item span {
+  font-family: var(--font-title);
+  font-size: 0.5rem;
+  letter-spacing: 0.15em;
+  color: var(--white-soft);
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: all 0.3s var(--ease-silk);
+}
+
+.gallery-item i {
+  font-size: 1.2rem;
+  transition: all 0.3s var(--ease-silk);
+}
+
+.gallery-item::before {
+  content: 'Photo';
+  position: absolute;
+  top: 8px; left: 10px;
+  font-family: var(--font-title);
+  font-size: 0.4rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+
+/* slight size variation */
+.gallery-item.g1 { background: rgba(201,168,76,0.06); }
+.gallery-item.g2 { background: rgba(201,168,76,0.04); }
+.gallery-item.g3 { background: rgba(201,168,76,0.08); }
+
+.gallery-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 30px var(--glow);
+  border-color: var(--gold);
+}
+.gallery-item:hover span { opacity: 1; transform: translateY(0); }
+.gallery-item:hover i { transform: scale(1.2); }
+
+/* ═══════════════════════════════════════════════════
+   QUOTE SECTION
+═══════════════════════════════════════════════════ */
+.quote-card {
+  width: 100%;
+  padding: 2rem 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 1.4rem;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.quote-text {
+  font-family: var(--font-sinhala);
+  font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+  font-weight: 300;
+  line-height: 2;
+  color: var(--white);
+  letter-spacing: 0.03em;
+}
+
+.quote-rule {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+.quote-attr {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--gold);
+  opacity: 0.75;
+}
+
+/* ═══════════════════════════════════════════════════
+   CONTACT SECTION
+═══════════════════════════════════════════════════ */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+  width: 100%;
+}
+
+.contact-card {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.contact-role {
+  font-family: var(--font-sinhala);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.contact-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1.4rem;
+  background: rgba(201,168,76,0.08);
+  box-shadow: 0 0 18px rgba(201,168,76,0.2);
+}
+
+.contact-avatar.female { color: #e0a0c0; border-color: #c07090; background: rgba(192,112,144,0.08); }
+
+.contact-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.contact-number {
+  font-family: var(--font-title);
+  font-size: 0.68rem;
+  color: var(--white-soft);
+  letter-spacing: 0.12em;
+}
+
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-family: var(--font-sinhala);
+  letter-spacing: 0.05em;
+  transition: all 0.35s var(--ease-silk);
+  border: 1px solid transparent;
+}
+
+.call-btn {
+  background: rgba(255,255,255,0.05);
+  color: var(--white);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.call-btn:hover {
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 16px rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+.wa-btn {
+  background: rgba(37,211,102,0.1);
+  color: #25d366;
+  border-color: rgba(37,211,102,0.3);
+}
+
+.wa-btn:hover {
+  background: #25d366;
+  color: var(--navy);
+  box-shadow: 0 0 24px rgba(37,211,102,0.4);
+  transform: translateY(-2px);
+}
+
+.wa-btn i { font-size: 1rem; }
+.call-btn i { font-size: 0.85rem; }
+
+/* ═══════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════ */
+.footer {
+  width: 100%;
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  border-top: 1px solid rgba(201,168,76,0.12);
+  margin-top: 1rem;
+}
+
+.footer-names {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  background: linear-gradient(90deg, var(--gold-lt), var(--gold), var(--gold-dk));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-date {
+  font-family: var(--font-title);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: var(--white-soft);
+}
+
+.footer-hearts {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--gold);
+  font-size: 0.5rem;
+  opacity: 0.5;
+  margin: 0.3rem 0;
+}
+
+.footer-love {
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  color: var(--white-soft);
+  opacity: 0.5;
+  letter-spacing: 0.08em;
+}
+
+.gold { color: var(--gold); }
+
+/* ═══════════════════════════════════════════════════
+   SCROLL REVEAL ANIMATION
+═══════════════════════════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s var(--ease-silk), transform 0.8s var(--ease-silk);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger children */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease-silk), transform 0.7s var(--ease-silk);
+}
+.reveal-stagger.in-view > *:nth-child(1) { opacity:1; transform:none; transition-delay:0.05s; }
+.reveal-stagger.in-view > *:nth-child(2) { opacity:1; transform:none; transition-delay:0.15s; }
+.reveal-stagger.in-view > *:nth-child(3) { opacity:1; transform:none; transition-delay:0.25s; }
+.reveal-stagger.in-view > *:nth-child(4) { opacity:1; transform:none; transition-delay:0.35s; }
+.reveal-stagger.in-view > *:nth-child(5) { opacity:1; transform:none; transition-delay:0.45s; }
+.reveal-stagger.in-view > *:nth-child(6) { opacity:1; transform:none; transition-delay:0.55s; }
+
+/* ═══════════════════════════════════════════════════
+   MOBILE TWEAKS
+═══════════════════════════════════════════════════ */
+@media (max-width: 400px) {
+  .details-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .countdown-grid { gap: 0.5rem; }
+  .count-box { padding: 0.8rem 0.2rem; }
+}
+
+@media (max-width: 340px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ═══════════════════════════════════════════════════
+   GOLDEN GLOW PULSE (decorative)
+═══════════════════════════════════════════════════ */
+@keyframes glow-pulse {
+  0%,100% { box-shadow: 0 0 12px var(--glow); }
+  50%      { box-shadow: 0 0 32px rgba(201,168,76,0.3); }
+}
+
+.count-box { animation: glow-pulse 4s ease-in-out infinite; }
+.count-box:nth-child(2) { animation-delay: 0.5s; }
+.count-box:nth-child(3) { animation-delay: 1s; }
+.count-box:nth-child(4) { animation-delay: 1.5s; }
+
+</style>
+</head>
+<body>
+
+  <!-- ── MUSIC TOGGLE ── -->
+  <button class="music-btn" id="musicBtn" title="Toggle Music">
+    <i class="fas fa-music" id="musicIcon"></i>
+  </button>
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ══════════════════════════════════════════
+       COVER / WELCOME
+  ══════════════════════════════════════════ -->
+  <section class="cover" id="cover">
+    <canvas id="fireflies"></canvas>
+
+    <div class="cover-content">
+      <p class="cover-eyebrow">Wedding Invitation</p>
+
+      <div class="names-block">
+        <h1 class="name-groom">Sasidu Manosha</h1>
+        <div class="ampersand">&amp;</div>
+        <h1 class="name-bride">Malsha Dilshani</h1>
+      </div>
+
+      <p class="cover-date">10 · July · 2025</p>
+
+      <p class="cover-quote">සදාකාලික ආදර කතාවක ආරම්භය…</p>
+
+      <p class="cover-welcome">
+        අපගේ ජීවිතයේ සුන්දරම මොහොත ඔබ සමඟ<br />සැමරීමට ආදරයෙන් ආරාධනා කරමු.
+      </p>
+
+      <button class="btn-open" id="openBtn">
+        <span>ආරාධනය විවෘත කරන්න</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
+
+    <div class="scroll-hint">
+      <i class="fas fa-angle-double-down"></i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MAIN INVITATION (revealed after click)
+  ══════════════════════════════════════════ -->
+  <main class="invitation" id="invitation">
+
+    <!-- ── ORNAMENT DIVIDER ── -->
+    <div class="ornament-divider">
+      <span class="line"></span>
+      <i class="fas fa-star ornament-star"></i>
+      <span class="line"></span>
+    </div>
+
+    <!-- ── COUNTDOWN ── -->
+    <section class="section countdown-section">
+      <h2 class="section-title">අපගේ විවාහ දිනයට තව</h2>
+      <div class="countdown-grid" id="countdown">
+        <div class="count-box"><span id="cd-days">00</span><label>දවස්</label></div>
+        <div class="count-box"><span id="cd-hours">00</span><label>පැය</label></div>
+        <div class="count-box"><span id="cd-mins">00</span><label>මිනිත්තු</label></div>
+        <div class="count-box"><span id="cd-secs">00</span><label>තත්පර</label></div>
+      </div>
+    </section>
+
+    <div class="ornament-divider">
+      <span class="line"></span>
+      <i class="fas fa-star ornament-star"></i>
+      <span class="line"></span>
+    </div>
+
+    <!-- ── EVENT DETAILS ── -->
+    <section class="section details-section">
+      <h2 class="section-title">උත්සව විස්තර</h2>
+
+      <div class="details-grid">
+        <div class="glass-card detail-card">
+          <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+          <h3>දිනය</h3>
+          <p>2025 ජූලි 10</p>
+          <p class="sub">බ්‍රහස්පතින්දා</p>
+        </div>
+        <div class="glass-card detail-card">
+          <div class="card-icon"><i class="fas fa-clock"></i></div>
+          <h3>වේලාව</h3>
+          <p>රාත්‍රී 7:00 සිට</p>
+          <p class="sub">12:00 දක්වා</p>
+        </div>
+        <div class="glass-card detail-card">
+          <div class="card-icon"><i class="fas fa-glass-cheers"></i></div>
+          <h3>සිදුවීම</h3>
+          <p>Night Celebration</p>
+          <p class="sub">with Drinks</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornament-divider">
+      <span class="line"></span>
+      <i class="fas fa-star ornament-star"></i>
+      <span class="line"></span>
+    </div>
+
+    <!-- ── LOCATION ── -->
+    <section class="section location-section">
+      <h2 class="section-title">උත්සව ස්ථානය</h2>
+      <div class="glass-card venue-card">
+        <div class="venue-name">
+          <i class="fas fa-map-marker-alt gold"></i>
+          Lake Edge Hotel
+        </div>
+        <p class="venue-address">Sandungama Road, Tissamaharama</p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.2!2d81.2876!3d6.2830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae6b5e0c6c6a1d3%3A0x1234567890abcdef!2sLake+Edge+Hotel%2C+Tissamaharama!5e0!3m2!1sen!2slk!4v1720000000000!5m2!1sen!2slk"
+            width="100%"
+            height="220"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lake Edge Hotel Map"
+          ></iframe>
+        </div>
+        <a
+          href="https://maps.google.com/?q=Lake+Edge+Hotel+Tissamaharama"
+          target="_blank"
+          class="btn-directions"
+        >
+          <i class="fas fa-directions"></i> මාර්ගය බලන්න
+        </a>
+      </div>
+    </section>
+
+    <div class="ornament-divider">
+      <span class="line"></span>
+      <i class="fas fa-star ornament-star"></i>
+      <span class="line"></span>
+    </div>
+
+    <!-- ── GALLERY PLACEHOLDERS ── -->
+    <section class="section gallery-section">
+      <h2 class="section-title">අපගේ මොහොත</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item g1"><i class="fas fa-camera"></i><span>Our Moment</span></div>
+        <div class="gallery-item g2"><i class="fas fa-heart"></i><span>Together</span></div>
+        <div class="gallery-item g3"><i class="fas fa-camera"></i><span>Our Story</span></div>
+        <div class="gallery-item g4"><i class="fas fa-star"></i><span>Forever</span></div>
+        <div class="gallery-item g5"><i class="fas fa-camera"></i><span>Us</span></div>
+        <div class="gallery-item g6"><i class="fas fa-heart"></i><span>Love</span></div>
+      </div>
+    </section>
+
+    <div class="ornament-divider">
+      <span class="line"></span>
+      <i class="fas fa-star ornament-star"></i>
+      <span class="line"></span>
+    </div>
+
+    <!-- ── QUOTE ── -->
+    <section class="section quote-section">
+      <div class="quote-card glass-card">
+        <i class="fas fa-quote-left quote-icon"></i>
+        <p class="quote-text">
+          ආදරය කාලය හා අවකාශය ඉක්මවා<br />
+          සදාකාලිකව දිලෙන තරුවකි.
+        </p>
+        <div class="quote-rule"></div>
+        <p class="quote-attr">— Sasidu &amp; Malsha</p>
+      </div>
+    </section>
+
+    <div class="ornament-divider">
+      <span class="line"></span>
+      <i class="fas fa-star ornament-star"></i>
+      <span class="line"></span>
+    </div>
+
+    <!-- ── CONTACT ── -->
+    <section class="section contact-section">
+      <h2 class="section-title">සම්බන්ධ වන්න</h2>
+      <div class="contact-grid">
+
+        <!-- GROOM -->
+        <div class="glass-card contact-card">
+          <div class="contact-role">පතිය</div>
+          <div class="contact-avatar">
+            <i class="fas fa-male"></i>
+          </div>
+          <h3 class="contact-name">Sasidu Manosha</h3>
+          <p class="contact-number">071 234 5678</p>
+          <div class="contact-btns">
+            <a href="tel:+94712345678" class="contact-btn call-btn">
+              <i class="fas fa-phone"></i>
+              <span>ඇමතුම</span>
+            </a>
+            <a href="https://wa.me/94712345678" target="_blank" class="contact-btn wa-btn">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- BRIDE -->
+        <div class="glass-card contact-card">
+          <div class="contact-role">පත්නිය</div>
+          <div class="contact-avatar female">
+            <i class="fas fa-female"></i>
+          </div>
+          <h3 class="contact-name">Malsha Dilshani</h3>
+          <p class="contact-number">071 234 5678</p>
+          <div class="contact-btns">
+            <a href="tel:+94712345678" class="contact-btn call-btn">
+              <i class="fas fa-phone"></i>
+              <span>ඇමතුම</span>
+            </a>
+            <a href="https://wa.me/94712345678" target="_blank" class="contact-btn wa-btn">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="footer-names">Sasidu &amp; Malsha</div>
+      <p class="footer-date">10 · July · 2025</p>
+      <div class="footer-hearts">
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-heart"></i>
+      </div>
+      <p class="footer-love">Made with <i class="fas fa-heart gold"></i> for our special day</p>
+    </footer>
+
+  </main>
+
+  
+<script>
+/* ═══════════════════════════════════════════════════
+   WEDDING INVITATION — script.js
+   Sasidu Manosha & Malsha Dilshani
+═══════════════════════════════════════════════════ */
+
+/* ── 1. FIREFLY CANVAS ───────────────────────────── */
+(function initFireflies() {
+  const canvas = document.getElementById('fireflies');
+  const ctx    = canvas.getContext('2d');
+  let W, H, flies = [];
+
+  const N = window.innerWidth < 500 ? 40 : 70;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  function Fly() {
+    this.reset();
+  }
+
+  Fly.prototype.reset = function () {
+    this.x    = Math.random() * W;
+    this.y    = Math.random() * H;
+    this.r    = Math.random() * 1.8 + 0.4;
+    this.vx   = (Math.random() - 0.5) * 0.35;
+    this.vy   = (Math.random() - 0.5) * 0.35;
+    this.life = 0;
+    this.maxLife = Math.random() * 200 + 120;
+    // gold or white
+    this.gold = Math.random() > 0.4;
+  };
+
+  for (let i = 0; i < N; i++) {
+    const f = new Fly();
+    f.life = Math.random() * f.maxLife; // start at random phase
+    flies.push(f);
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    flies.forEach(f => {
+      f.life++;
+      if (f.life > f.maxLife) f.reset();
+
+      const progress = f.life / f.maxLife;
+      // bell-curve alpha
+      const alpha = Math.sin(progress * Math.PI) * 0.7;
+
+      const hue = f.gold ? '42, 70%, 60%' : '0, 0%, 95%';
+
+      ctx.beginPath();
+      ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+      ctx.fillStyle = `hsla(${hue}, ${alpha})`;
+      ctx.fill();
+
+      // soft glow
+      const grd = ctx.createRadialGradient(f.x, f.y, 0, f.x, f.y, f.r * 5);
+      grd.addColorStop(0, `hsla(${hue}, ${alpha * 0.4})`);
+      grd.addColorStop(1, `hsla(${hue}, 0)`);
+      ctx.beginPath();
+      ctx.arc(f.x, f.y, f.r * 5, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+
+      f.x += f.vx;
+      f.y += f.vy;
+      // slight drift
+      f.vx += (Math.random() - 0.5) * 0.01;
+      f.vy += (Math.random() - 0.5) * 0.01;
+
+      // clamp speed
+      const speed = Math.sqrt(f.vx * f.vx + f.vy * f.vy);
+      if (speed > 0.6) { f.vx *= 0.6 / speed; f.vy *= 0.6 / speed; }
+    });
+
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── 2. OPEN INVITATION BUTTON ───────────────────── */
+document.getElementById('openBtn').addEventListener('click', function () {
+  const invitation = document.getElementById('invitation');
+  invitation.classList.add('visible');
+  setTimeout(() => {
+    invitation.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+});
+
+/* ── 3. COUNTDOWN TIMER ──────────────────────────── */
+(function initCountdown() {
+  const target = new Date('2025-07-10T19:00:00');
+
+  const els = {
+    days:  document.getElementById('cd-days'),
+    hours: document.getElementById('cd-hours'),
+    mins:  document.getElementById('cd-mins'),
+    secs:  document.getElementById('cd-secs'),
+  };
+
+  function pad(n) { return String(Math.max(0, n)).padStart(2, '0'); }
+
+  function flip(el, val) {
+    const newVal = pad(val);
+    if (el.textContent !== newVal) {
+      el.style.transform = 'translateY(-8px)';
+      el.style.opacity   = '0';
+      setTimeout(() => {
+        el.textContent     = newVal;
+        el.style.transform = 'translateY(0)';
+        el.style.opacity   = '1';
+      }, 180);
+    }
+  }
+
+  // add transition to spans
+  Object.values(els).forEach(el => {
+    el.style.transition = 'transform 0.25s ease, opacity 0.25s ease';
+  });
+
+  function tick() {
+    const now  = new Date();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      Object.values(els).forEach(el => { el.textContent = '00'; });
+      return;
+    }
+
+    const days  = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins  = Math.floor((diff % 3600000)  / 60000);
+    const secs  = Math.floor((diff % 60000)    / 1000);
+
+    flip(els.days,  days);
+    flip(els.hours, hours);
+    flip(els.mins,  mins);
+    flip(els.secs,  secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ── 4. SCROLL REVEAL ────────────────────────────── */
+(function initReveal() {
+  const elements = [];
+
+  function register() {
+    document.querySelectorAll('.section, .ornament-divider, .footer').forEach(el => {
+      if (!el._reveal) {
+        el.classList.add('reveal');
+        el._reveal = true;
+        elements.push(el);
+      }
+    });
+
+    // stagger for grids inside sections
+    document.querySelectorAll('.details-grid, .countdown-grid, .gallery-grid, .contact-grid').forEach(el => {
+      if (!el._stagger) {
+        el.classList.add('reveal-stagger');
+        el._stagger = true;
+        elements.push(el);
+      }
+    });
+  }
+
+  function check() {
+    const vH = window.innerHeight;
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < vH * 0.92 && rect.bottom > 0) {
+        el.classList.add('in-view');
+      }
+    });
+  }
+
+  // re-register after invitation is shown
+  const observer = new MutationObserver(() => {
+    register();
+    check();
+  });
+  observer.observe(document.getElementById('invitation'), { attributes: true, attributeFilter: ['class'] });
+
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check, { passive: true });
+  register();
+  check();
+})();
+
+/* ── 5. MUSIC TOGGLE ─────────────────────────────── */
+(function initMusic() {
+  const btn   = document.getElementById('musicBtn');
+  const audio = document.getElementById('bgMusic');
+  const icon  = document.getElementById('musicIcon');
+  let playing = false;
+
+  // volume
+  audio.volume = 0.25;
+
+  btn.addEventListener('click', () => {
+    if (playing) {
+      audio.pause();
+      icon.className = 'fas fa-music';
+      btn.style.border = '';
+      playing = false;
+    } else {
+      audio.play().catch(() => {}); // may be blocked by browser
+      icon.className = 'fas fa-pause';
+      btn.style.border = '1px solid #c9a84c';
+      playing = true;
+    }
+  });
+})();
+
+/* ── 6. GALLERY PLACEHOLDER CLICK ───────────────── */
+document.querySelectorAll('.gallery-item').forEach((item, i) => {
+  item.addEventListener('click', () => {
+    item.style.transition = 'transform 0.15s ease, box-shadow 0.15s ease';
+    item.style.transform  = 'scale(0.96)';
+    setTimeout(() => {
+      item.style.transform = '';
+    }, 150);
+  });
+});
+
+/* ── 7. PARALLAX COVER NAMES (subtle) ───────────── */
+(function initParallax() {
+  const names = document.querySelector('.names-block');
+  if (!names) return;
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    names.style.transform = `translateY(${y * 0.18}px)`;
+    names.style.opacity   = Math.max(0, 1 - y / 500);
+  }, { passive: true });
+})();
+
+/* ── 8. GOLD CURSOR TRAIL (desktop only) ─────────── */
+(function initTrail() {
+  if (window.innerWidth < 768) return; // skip on mobile
+
+  const dots = [];
+  const N    = 8;
+
+  for (let i = 0; i < N; i++) {
+    const d = document.createElement('div');
+    Object.assign(d.style, {
+      position:     'fixed',
+      pointerEvents:'none',
+      borderRadius: '50%',
+      background:   `rgba(201,168,76,${0.35 - i * 0.04})`,
+      width:        `${6 - i * 0.5}px`,
+      height:       `${6 - i * 0.5}px`,
+      transform:    'translate(-50%,-50%)',
+      zIndex:       99998,
+      transition:   `left ${i * 30}ms linear, top ${i * 30}ms linear`,
+    });
+    document.body.appendChild(d);
+    dots.push(d);
+  }
+
+  document.addEventListener('mousemove', e => {
+    dots.forEach(d => {
+      d.style.left = e.clientX + 'px';
+      d.style.top  = e.clientY + 'px';
+    });
+  }, { passive: true });
+})();
+
+</script>
+</body>
+</html>
