@@ -1331,22 +1331,6 @@ document.getElementById('openBtn').addEventListener('click', function () {
   let playing = true;
 
   audio.volume = 0.25;
-  audio.muted = true;
-
-  window.addEventListener('load', () => {
-    audio.play().then(() => {
-
-      setTimeout(() => {
-        audio.muted = false;
-      }, 1200);
-
-      icon.className = 'fas fa-pause';
-      btn.style.border = '1px solid #c9a84c';
-
-    }).catch(() => {
-      console.log('Autoplay blocked');
-    });
-  });
 
   btn.addEventListener('click', () => {
 
